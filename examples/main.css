@@ -8,6 +8,7 @@ body {
 	overscroll-behavior: none;
 }
 
+
 a {
 	color: #ff0;
 	text-decoration: none;
@@ -89,3 +90,18 @@ a, button, input, select {
 	margin-top: 20px;
 	padding: 10px;
 }
+
+
+.changing-hue {
+	animation: hue-change 10s infinite;
+  }
+  
+  @keyframes hue-change {
+	0% {
+	  filter: hue-rotate(0deg);
+	}
+	100% {
+	  filter: hue-rotate(360deg);
+	}
+  }
+  
